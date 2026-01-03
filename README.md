@@ -393,7 +393,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ## 📞 Contact & Support
 
-- **Email**: support@gurunirman.edu.in
+- **Email**: nishantborude555@gmail.com
 - **Documentation**: [docs.gurunirman.edu.in](https://docs.gurunirman.edu.in)
 - **Issues**: [GitHub Issues](https://github.com/your-org/gurunirman/issues)
 
