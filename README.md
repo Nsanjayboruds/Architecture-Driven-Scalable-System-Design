@@ -1,4 +1,4 @@
-# GuruNirman - AI-Powered Adaptive Teacher Training Platform
+# Architecture-Driven-Scalable-System-Design
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org)
@@ -6,7 +6,7 @@
 
 ## 🎯 Project Overview
 
-GuruNirman is an AI-powered adaptive teacher training platform that enables DIETs (District Institutes of Education and Training) and SCERTs (State Council of Educational Research and Training) to deliver **personalized, need-based teacher training** using AI-assisted micro-learning modules and real-time feedback from classrooms.
+This is an AI-powered adaptive teacher training platform that enables DIETs (District Institutes of Education and Training) and SCERTs (State Council of Educational Research and Training) to deliver **personalized, need-based teacher training** using AI-assisted micro-learning modules and real-time feedback from classrooms.
 
 ### Problem Statement
 
@@ -18,7 +18,7 @@ Current teacher training programs face critical challenges:
 
 ### Solution
 
-GuruNirman leverages AI to:
+The platform leverages AI to:
 - ✅ Analyze teacher feedback in real-time
 - ✅ Generate cluster-specific micro-learning modules (5-10 minutes)
 - ✅ Adapt training based on local needs, resources, and language
@@ -128,7 +128,7 @@ For detailed architecture diagrams, see [docs/architecture/](docs/architecture/S
 ## 📁 Project Structure
 
 ```
-gurunirman/
+project/
 ├── frontend/                 # React frontend application
 │   ├── src/
 │   │   ├── components/      # Reusable UI components
@@ -310,8 +310,8 @@ mongosh --version # MongoDB Shell (optional)
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-org/gurunirman.git
-cd gurunirman
+git clone https://github.com/your-org/project.git
+cd project
 ```
 
 2. **Setup Backend**
@@ -395,7 +395,8 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 - **Email**: nishantborude555@gmail.com
 
-## 🙏 Acknowledgments
+
+## 🙏 Acknowledgments 
 
 - Ministry of Education, Government of India
 - DIETs and SCERTs across India
