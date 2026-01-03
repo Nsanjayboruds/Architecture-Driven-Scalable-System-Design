@@ -1,0 +1,56 @@
+flowchart TB
+    subgraph User_Layer
+        T[Teachers]
+        A[Admins/Coordinators]
+    end
+
+    subgraph Frontend["Frontend (React + Tailwind)"]
+        TP[Teacher Panel\nFeedback + Modules]
+        AD[Admin Dashboard\nUpload + Analytics]
+    end
+
+    subgraph API["API Layer (Go + Gin/Fiber)"]
+        AUTH[Auth & RBAC]
+        MOD[Training Module Service]
+        FBK[Feedback Processor]
+        COH[Cohort Builder]
+        REC[Recommendation Engine]
+        ANL[Analytics API]
+    end
+
+    subgraph AI_Data["AI & Data"]
+        CHUNK[Content Chunker\nLLM + NLP]
+        ADAPT[Adaptation Engine\nLanguage/Resources/Culture]
+        FAN[Feedback Analyzer\nNLP + Embeddings]
+        VEC["Vector DB\n(Pinecone)"]
+        MDB[(MongoDB)]
+        REDIS[(Redis Cache)]
+        S3[(Object Storage)]
+    end
+
+    T --> TP
+    A --> AD
+    TP -->|REST/WebSocket| AUTH
+    AD -->|REST/WebSocket| AUTH
+    AUTH --> MOD
+    AUTH --> FBK
+    AUTH --> COH
+    AUTH --> REC
+    AUTH --> ANL
+
+    MOD --> MDB
+    MOD --> VEC
+    FBK --> MDB
+    FBK --> FAN
+    FAN --> VEC
+    COH --> MDB
+    REC --> VEC
+    REC --> MDB
+    ANL --> MDB
+    ANL --> REDIS
+
+    MOD -->|Triggers| CHUNK
+    CHUNK --> ADAPT
+    ADAPT --> MDB
+    ADAPT --> VEC
+    CHUNK --> S3

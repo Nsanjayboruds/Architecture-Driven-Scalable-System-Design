@@ -6,7 +6,8 @@
 
 ## 🎯 Project Overview
 
-This is an AI-powered adaptive teacher training platform that enables DIETs (District Institutes of Education and Training) and SCERTs (State Council of Educational Research and Training) to deliver **personalized, need-based teacher training** using AI-assisted micro-learning modules and real-time feedback from classrooms.
+This is an Architecture-Driven-Scalable-System-Design
+ that enables DIETs (District Institutes of Education and Training) and SCERTs (State Council of Educational Research and Training) to deliver **personalized, need-based teacher training** using AI-assisted micro-learning modules and real-time feedback from classrooms.
 
 ### Problem Statement
 
